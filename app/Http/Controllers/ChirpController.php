@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 class ChirpController extends Controller
 {
     use AuthorizesRequests;
+
     /**
      * Display a listing of the resource.
      */

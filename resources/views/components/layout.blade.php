@@ -20,7 +20,7 @@
         <div class="navbar-end gap-2">
             @auth
             <span class="text-sm">{{ auth()->user()->name }}</span>
-            <form method="POST" action="/logout" class="inline">
+            <form method="POST" action="{{ route('logout') }}" class="inline">
                 @csrf
                 <button type="submit" class="btn btn-ghost btn-sm">Logout</button>
             </form>
@@ -50,7 +50,7 @@
 
     <footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
         <div>
-            <p>© 2025 Chirper - Built with Laravel and ❤️</p>
+            <p>© {{ now()->year }} Chirper - Built with Laravel and ❤️</p>
         </div>
     </footer>
 </body>
